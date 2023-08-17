@@ -25,7 +25,7 @@ const IDENTITIES = [
 
 export const Identities = () => {
   return (
-    <Card bgColor="transparent" shadow="none">
+    <Card bgColor="transparent" border="1px solid #ddd" shadow="none">
       <CardHeader>
         <HStack justifyContent='space-between'>
           <Heading size='md' color="#fff">Identities</Heading>
@@ -37,7 +37,7 @@ export const Identities = () => {
           {
             IDENTITIES.map((ident, key) =>
               <HStack key={key} p={2} bgColor="#dddbdb" borderRadius="xl" whiteSpace="nowrap">
-                <Avatar 
+                <Avatar
                   src={ident.logo}
                   size="sm"
                 />
