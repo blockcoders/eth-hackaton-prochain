@@ -50,9 +50,9 @@ const data = [
 
 export const ActivityBalance = () => {
   return (
-    <Card bgColor="transparent" border="2px solid #ddd" shadow="none">
+    <Card bgColor="transparent"  shadow="none">
       <CardHeader>
-        <Heading size='md'>Balance</Heading>
+        <Heading size='md' color="white">Balance</Heading>
       </CardHeader>
       <CardBody>
         <Box height="300px">

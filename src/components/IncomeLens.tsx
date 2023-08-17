@@ -1,5 +1,5 @@
 'use client'
-import { Stack, Text } from "@chakra-ui/react"
+import { Stack, Text, Box } from "@chakra-ui/react"
 
 const data = [
   {
@@ -45,14 +45,14 @@ export const IncomeLens = () => {
       {
         data.map(({ title, list }) => (
           <>
-            <Text>{title}</Text>
+            <Text color="white">{title}</Text>
             <Stack>
               {
                 list.map(({ name, amount }) => (
-                  <Stack key={name} direction="row" justifyContent="space-between">
+                  <Box bgColor="gray.600" color="white" key={name} justifyContent="space-between" px={3} rounded="xl"> 
                     <Text>{name}</Text>
                     <Text>{amount}</Text>
-                  </Stack>
+                  </Box>
                 ))
               }
             </Stack>
