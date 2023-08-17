@@ -8,3 +8,5 @@ export * from "./WalletActivity";
 export * from "./BlockchainsUsed";
 export * from "./ActivityBalance";
 export * from "./ActivityList";
+export * from "./IncomeBalance";
+export * from "./IncomeLens";

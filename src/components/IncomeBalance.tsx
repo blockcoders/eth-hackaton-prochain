@@ -42,12 +42,11 @@ const data = [
   },
 ];
 
-
-export const WalletActivity = () => {
+export const IncomeBalance = () => {
   return (
-    <Card bgColor="transparent" border="1px solid #ddd" shadow="none">
+    <Card bgColor="transparent" border="2px solid #ddd" shadow="none">
       <CardHeader>
-        <Heading size='md' color="#fff">Wallet activity</Heading>
+        <Heading size='md'>Balance</Heading>
       </CardHeader>
       <CardBody>
         <Box height="300px">
@@ -65,7 +64,7 @@ export const WalletActivity = () => {
             >
               <XAxis dataKey="name" />
               <Tooltip />
-              <Area type="monotone" dataKey="uv" stroke="#70c976" fill="#9df09f" />
+              <Area type="monotone" dataKey="uv" stroke="#8884d8" fill="#8884d8" />
             </AreaChart>
           </ResponsiveContainer>
 

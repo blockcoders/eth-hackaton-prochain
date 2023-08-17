@@ -50,9 +50,9 @@ const data = [
 
 export const WalletIncome = () => {
   return (
-    <Card bgColor="transparent" border="2px solid #ddd" shadow="none">
+    <Card bgColor="transparent" shadow="none">
       <CardHeader>
-        <Heading size='md'>Wallet income</Heading>
+        <Heading size='md' color="#fff">Wallet income</Heading>
       </CardHeader>
       <CardBody >
         <Box height="300px">
@@ -71,8 +71,8 @@ export const WalletIncome = () => {
               <XAxis dataKey="name" />
               <Tooltip />
               <Legend />
-              <Bar dataKey="Income" stackId="a" fill="#92d29a" />
-              <Bar dataKey="Expenses" stackId="a" fill="#fe9890" />
+              <Bar dataKey="Income" stackId="a" fill="#65dfa4" />
+              <Bar dataKey="Expenses" stackId="a" fill="#73cffd" />
             </BarChart>
           </ResponsiveContainer>
 

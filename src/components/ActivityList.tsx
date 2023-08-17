@@ -50,7 +50,7 @@ const DATA = [
   },
 ]
 
-const typeColor = {
+const typeColor: { [key: string]: string } = {
   Income: "green",
   Spent: "red",
   Mint: "pruple"
@@ -80,8 +80,8 @@ export const ActivityList = () => {
                 <Td borderBottom="1px solid #e8e9ea">
                   <Badge colorScheme={typeColor[data.type]}>
                     {data.type}
-                    </Badge>
-                  </Td>
+                  </Badge>
+                </Td>
               </Tr>
             ))
           }

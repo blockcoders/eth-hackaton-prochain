@@ -18,15 +18,15 @@ const PROTOCOLS = [
 
 export const Protocols = () => {
   return (
-    <Card bgColor="transparent" border="2px solid #ddd" shadow="none">
+    <Card bgColor="transparent" border="1px solid #ddd" shadow="none">
       <CardHeader>
-        <Heading size='md'>Protocols</Heading>
-      </CardHeader>
+          <Heading size='md' color="#fff">Protocols</Heading>
+        </CardHeader>
       <CardBody>
         <Grid gridTemplateColumns="1fr 1fr" gap={2}>
           {
             PROTOCOLS.map((ident, key) =>
-              <HStack key={key} p={2} bgColor="#dddbdb" borderRadius="xl">
+              <HStack key={key} p={2} bgColor="#dddbdb" borderRadius="xl"  whiteSpace="nowrap">
                 <Box>
                   <Text>{ident.title}</Text>
                 </Box>

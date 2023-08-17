@@ -12,11 +12,8 @@ const data = [
 
 export const BlockchainsUsed = () => {
   return (
-    <Card bgColor="transparent" border="2px solid #ddd" shadow="none">
-      <CardHeader>
-        <Heading size='md'>Blockchains used</Heading>
-      </CardHeader>
-      <CardBody>
+
+    <>
 
         <Box height="300px">
           <ResponsiveContainer width="100%" height="100%">
@@ -36,17 +33,16 @@ export const BlockchainsUsed = () => {
             </PieChart>
           </ResponsiveContainer>
         </Box>
-        <HStack justifyContent="center" gap={3}>
+        <Stack justifyContent="center" gap={3} alignItems="center">
           {
             data.map((d, index) => (
-              <HStack key={d.name}>
+              <HStack key={d.name} color="white">
                 <Box h="20px" w="20px" bgColor={d.color} borderRadius="full" />
                 <Text>{d.name} </Text>
               </HStack>
             ))
           }
-        </HStack>
-      </CardBody>
-    </Card>
+        </Stack>
+      </>
   )
 }

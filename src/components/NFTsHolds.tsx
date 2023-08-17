@@ -18,17 +18,20 @@ const NFTs = [
 
 export const NFTsHold = () => {
   return (
-    <Card bgColor="transparent" border="2px solid #ddd" shadow="none">
+    <Card bgColor="transparent" border="1px solid #ddd" shadow="none">
       <CardHeader>
-        <Heading size='md'>NFTs hold</Heading>
+        <HStack justifyContent='space-between'>
+          <Heading size='md' color="#fff">NFTs hold</Heading>
+          <Text color="#fff">16</Text>
+        </HStack>
       </CardHeader>
       <CardBody>
         <Grid gridTemplateColumns="1fr 1fr" gap={2}>
           {
             NFTs.map((ident, key) =>
-              <HStack key={key} p={2} bgColor="#dddbdb" borderRadius="xl">
+              <HStack key={key} p={2} bgColor="#dddbdb" borderRadius="xl"  whiteSpace="nowrap">
                 <Box>
-                  <Text>{ident.title}</Text>
+                  <Text >{ident.title}</Text>
                 </Box>
               </HStack>
             )

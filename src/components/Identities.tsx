@@ -22,18 +22,21 @@ const IDENTITIES = [
 
 export const Identities = () => {
   return (
-    <Card bgColor="transparent" border="2px solid #ddd" shadow="none">
+    <Card bgColor="transparent" shadow="none">
       <CardHeader>
-        <Heading size='md'>Identities</Heading>
+        <HStack justifyContent='space-between'>
+          <Heading size='md' color="#fff">Identities</Heading>
+          <Text color="#fff">3</Text>
+        </HStack>
       </CardHeader>
       <CardBody>
         <Grid gridTemplateColumns="1fr 1fr" gap={2}>
           {
             IDENTITIES.map((ident, key) =>
-              <HStack key={key} p={2} bgColor="#dddbdb" borderRadius="xl">
+              <HStack key={key} p={2} bgColor="#dddbdb" borderRadius="xl" whiteSpace="nowrap">
                 <Box>
-                  <Text>{ident.title}</Text>
-                  <Text>{ident.profile}</Text>
+                  <Text fontWeight="600">{ident.title}</Text>
+                  <Text fontSize="sm">{ident.profile}</Text>
                 </Box>
               </HStack>
             )
