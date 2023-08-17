@@ -1,18 +1,25 @@
 'use client'
-import { Box, Card, CardBody, CardHeader, Grid, HStack, Heading, Stack, Text } from '@chakra-ui/react'
+import {Avatar, Box, Card, CardBody, CardHeader, Grid, HStack, Heading, Stack, Text } from '@chakra-ui/react'
 
 const PROTOCOLS = [
   {
     title: "Lens Protocol",
+    logo: "./protocol-1.png"
   },
   {
     title: "OpenSea",
+    logo: "./protocol-2.png"
+
   },
   {
     title: "Talent Protocol",
+    logo: "./protocol-3.png"
+
   },
   {
     title: "Aave",
+    logo: "./protocol-4.png"
+
   }
 ]
 
@@ -27,7 +34,8 @@ export const Protocols = () => {
           {
             PROTOCOLS.map((ident, key) =>
               <HStack key={key} p={2} bgColor="#dddbdb" borderRadius="xl"  whiteSpace="nowrap">
-                <Box>
+                <Avatar src={ident.logo} size="sm"/>
+                <Box> 
                   <Text>{ident.title}</Text>
                 </Box>
               </HStack>

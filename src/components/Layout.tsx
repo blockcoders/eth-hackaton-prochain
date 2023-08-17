@@ -48,7 +48,7 @@ export const Layout = ({ children }: PropsWithChildren) => {
           <Icon as={BiLogOut} color="#fff" />
           </Stack>
       </Box>
-      <Box h="inherit">
+      <Box h="inherit" w="100%">
         {children}
       </Box>
     </HStack>

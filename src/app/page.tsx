@@ -24,7 +24,7 @@ export default function Home() {
         <Box mt={10} cursor="pointer" w="80%" mx="auto" py={3} px={1} display="flex" justifyContent="center" bgGradient="linear-gradient(180deg, #97FF72 0%, #2AB9DC 100%)" rounded="xl">
           <Box w="80%" color='#fff'>
             <Text>Upgrade your profile! </Text>
-            <Text fontSize="2xl"> 2USD/Month </Text>
+            <Text fontSize="2xl"> 4GHO/Month </Text>
           </Box>
         </Box>
 

@@ -1,18 +1,25 @@
 'use client'
-import { Box, Card, CardBody, CardHeader, Grid, HStack, Heading, Stack, Text } from '@chakra-ui/react'
+import {Avatar, Box, Card, CardBody, CardHeader, Grid, HStack, Heading, Stack, Text } from '@chakra-ui/react'
 
 const NFTs = [
   {
     title: "Pizza Day",
+    logo: '/nft-1.png'
   },
   {
     title: "Grimmie",
+    logo: '/nft-2.png'
+
   },
   {
-    title: "Mo",
+    title: "Moonbirds",
+    logo: '/nft-3.png'
+
   },
   {
     title: "Talent mates",
+    logo: '/nft-4.png'
+
   }
 ]
 
@@ -30,6 +37,7 @@ export const NFTsHold = () => {
           {
             NFTs.map((ident, key) =>
               <HStack key={key} p={2} bgColor="#dddbdb" borderRadius="xl"  whiteSpace="nowrap">
+                <Avatar src={ident.logo} size="sm" />
                 <Box>
                   <Text >{ident.title}</Text>
                 </Box>
