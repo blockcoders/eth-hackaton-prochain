@@ -50,7 +50,7 @@ const DATA = [
   },
 ]
 
-const typeColor = {
+const typeColor: Record<string, string> = {
   Income: "green",
   Spent: "red",
   Mint: "pruple"
